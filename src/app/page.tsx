@@ -292,11 +292,13 @@ export default function Home() {
 									<CardContent className="p-6">
 										<div
 											className="absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-10 transition-opacity duration-300"
-											style={{
-												backgroundImage: `linear-gradient(to bottom right, var(--tw-gradient-stops))`,
-												"--tw-gradient-from": feature.color.split(" ")[1],
-												"--tw-gradient-to": feature.color.split(" ")[3],
-											}}
+											style={
+												{
+													backgroundImage: `linear-gradient(to bottom right, var(--tw-gradient-stops))`,
+													"var(--tw-gradient-from)": feature.color.split(" ")[1],
+													"--tw-gradient-to": feature.color.split(" ")[3],
+												} as React.CSSProperties & { [key: string]: string }
+											}
 										></div>
 										<div className="flex items-center mb-4">
 											<div
