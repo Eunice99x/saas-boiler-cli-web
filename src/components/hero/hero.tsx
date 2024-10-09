@@ -3,16 +3,11 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ChevronRight, Terminal, Zap, Clock, Code, Database, Shield } from "lucide-react";
+import { ChevronRight, Terminal, Zap, Clock } from "lucide-react";
+import { features } from "@/data";
 
 export default function Hero({ fadeInUp }: any) {
 	const [isVideoOpen, setIsVideoOpen] = useState(false);
-
-	const features = [
-		{ icon: Code, title: "Multiple Frameworks", description: "Support for React, Vue, and Angular" },
-		{ icon: Database, title: "Database Integration", description: "Easy setup with popular databases" },
-		{ icon: Shield, title: "Authentication", description: "Built-in auth and user management" },
-	];
 
 	return (
 		<section className="relative overflow-hidden bg-gray-50 dark:bg-gray-900 py-20 sm:py-32">
@@ -146,11 +141,11 @@ export default function Hero({ fadeInUp }: any) {
 						>
 							<div className="aspect-w-16 aspect-h-9 mb-4">
 								<iframe
-									src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+									src="https://www.youtube.com/embed/KgRwqmxw8AQ"
 									frameBorder="0"
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 									allowFullScreen
-									className="w-full h-full rounded"
+									className="w-full h-[500px] rounded"
 								></iframe>
 							</div>
 							<Button onClick={() => setIsVideoOpen(false)} className="w-full">

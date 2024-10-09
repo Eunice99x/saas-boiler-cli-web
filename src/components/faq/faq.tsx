@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { faqItems } from "@/data";
 
 const staggerChildren = {
 	animate: {
@@ -10,33 +11,6 @@ const staggerChildren = {
 		},
 	},
 };
-
-const faqItems = [
-	{
-		question: "What is SaaS Boilerplate CLI?",
-		answer:
-			"SaaS Boilerplate CLI is a command-line tool that helps developers quickly set up a fully-featured SaaS application with customizable tech stack and integrations.",
-	},
-	{
-		question: "Which technologies are supported?",
-		answer:
-			"We support a variety of modern technologies including Next.js, Angular, Nuxt for frontend; GoFiber, Django, Express for backend; Stripe, Lemon Squeezy, PayPal for payments; and more.",
-	},
-	{
-		question: "Is it free to use?",
-		answer:
-			"Yes, the CLI tool is free to use. However, some of the services it integrates with may have their own pricing plans.",
-	},
-	{
-		question: "Can I customize the boilerplate after generation?",
-		answer: "The generated code is yours to modify and extend as needed for your specific SaaS application.",
-	},
-	{
-		question: "Do you offer support?",
-		answer:
-			"We provide documentation and community support through our GitHub repository. For premium support, please check our website for paid plans.",
-	},
-];
 
 export default function Faq({ fadeInUp }: any) {
 	return (

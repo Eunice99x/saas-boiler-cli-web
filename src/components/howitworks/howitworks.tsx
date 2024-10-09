@@ -4,32 +4,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Terminal, Clipboard, Settings, Zap, ChevronRight } from "lucide-react";
-
-const steps = [
-	{
-		title: "Install",
-		icon: Terminal,
-		description: "Get started with a single command",
-		code: "npx saas-boiler-cli",
-		details:
-			"Our CLI tool is designed for quick and easy installation. Just run this command in your terminal, and you'll be up and running in no time.",
-	},
-	{
-		title: "Configure",
-		icon: Settings,
-		description: "Choose your preferred technologies",
-		details:
-			"Customize your stack by selecting from a variety of frontend frameworks, backend technologies, databases, and more. Our intuitive configuration process ensures you get exactly what you need.",
-	},
-	{
-		title: "Launch",
-		icon: Zap,
-		description: "Your boilerplate is ready to customize",
-		details:
-			"Once configured, your boilerplate is instantly generated. You'll have a fully functional SaaS foundation that you can immediately start building upon.",
-	},
-];
+import { Clipboard, ChevronRight } from "lucide-react";
+import { steps } from "@/data";
 
 export default function HowItWorks() {
 	const [activeStep, setActiveStep] = useState(0);

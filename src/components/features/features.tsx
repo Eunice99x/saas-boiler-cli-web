@@ -2,145 +2,11 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
-import { ChevronRight, Layers, Server, CreditCard, Shield, Database, Mail } from "lucide-react";
-
-const features = [
-	{
-		category: "Frontend",
-		items: [
-			{
-				name: "Next.js",
-				description: "React framework for production",
-				icon: "https://img.icons8.com/?size=100&id=yUdJlcKanVbh&format=png&color=000000",
-			},
-			{
-				name: "Angular",
-				description: "Platform for building web applications",
-				icon: "https://img.icons8.com/?size=100&id=l9a5tcSnBwcf&format=png&color=000000",
-			},
-			{
-				name: "Nuxt",
-				description: "Intuitive Vue Framework",
-				icon: "https://img.icons8.com/?size=100&id=nvrsJYs7j9Vb&format=png&color=000000",
-			},
-		],
-		icon: Layers,
-		color: "from-blue-400 to-blue-600",
-	},
-	{
-		category: "Backend",
-		items: [
-			{
-				name: "GoFiber",
-				description: "Express inspired web framework in Go",
-				icon: "https://img.icons8.com/?size=100&id=44442&format=png&color=000000",
-			},
-			{
-				name: "Django",
-				description: "High-level Python Web framework",
-				icon: "https://img.icons8.com/?size=100&id=qV-JzWYl9dzP&format=png&color=000000",
-			},
-			{
-				name: "Express",
-				description: "Minimalist web framework for Node.js",
-				icon: "https://img.icons8.com/?size=100&id=PZQVBAxaueDJ&format=png&color=000000",
-			},
-		],
-		icon: Server,
-		color: "from-green-400 to-green-600",
-	},
-	{
-		category: "Payments",
-		items: [
-			{
-				name: "Stripe",
-				description: "Online payment processing for businesses",
-				icon: "https://img.icons8.com/?size=100&id=iouv9vHfqHvP&format=png&color=000000",
-			},
-			{
-				name: "Lemon Squeezy",
-				description: "Platform for selling digital products",
-				icon: "https://cdn.prod.website-files.com/6347244ba8d63489ba51c08e/6347244ba8d63469e851c0d6_footer%20small%20logo.svg",
-			},
-			{
-				name: "PayPal",
-				description: "Online payments and money transfers",
-				icon: "https://img.icons8.com/?size=100&id=13611&format=png&color=000000",
-			},
-		],
-		icon: CreditCard,
-		color: "from-yellow-400 to-yellow-600",
-	},
-	{
-		category: "Authentication",
-		items: [
-			{
-				name: "NextAuth",
-				description: "Authentication for Next.js",
-				icon: "https://next-auth.js.org/img/logo/logo-sm.png",
-			},
-			{
-				name: "Clerk",
-				description: "Complete user management solution",
-				icon: "https://cdn.sanity.io/images/o0o2tn5x/production/2399b991025c365aafaa6fca85d91deac801e654-1046x1046.png",
-			},
-			{
-				name: "Firebase Auth",
-				description: "Multi-provider authentication",
-				icon: "https://img.icons8.com/?size=100&id=62452&format=png&color=000000",
-			},
-		],
-		icon: Shield,
-		color: "from-red-400 to-red-600",
-	},
-	{
-		category: "Database",
-		items: [
-			{
-				name: "MySQL",
-				description: "Open-source relational database",
-				icon: "https://img.icons8.com/?size=100&id=rgPSE6nAB766&format=png&color=000000",
-			},
-			{
-				name: "PostgreSQL",
-				description: "Advanced open source database",
-				icon: "https://img.icons8.com/?size=100&id=38561&format=png&color=000000",
-			},
-			{
-				name: "MongoDB",
-				description: "Document-oriented NoSQL database",
-				icon: "https://img.icons8.com/?size=100&id=74402&format=png&color=000000",
-			},
-			{
-				name: "Supabase",
-				description: "Open source Firebase alternative",
-				icon: "https://img.icons8.com/?size=100&id=sH0rW2TvYdr9&format=png&color=000000",
-			},
-		],
-		icon: Database,
-		color: "from-purple-400 to-purple-600",
-	},
-	{
-		category: "Email",
-		items: [
-			{
-				name: "Mailgun",
-				description: "Transactional Email APIs",
-				icon: "https://seeklogo.com/images/M/mailgun-logo-5388F66106-seeklogo.com.png",
-			},
-			{
-				name: "SendGrid",
-				description: "Customer communication platform",
-				icon: "https://sendgrid.com/content/dam/sendgrid/legacy/themes/sgdotcom/pages/resource/brand/img/SendGrid-Logomark-Color.png",
-			},
-		],
-		icon: Mail,
-		color: "from-pink-400 to-pink-600",
-	},
-];
+import { ChevronRight } from "lucide-react";
+import { keyFeatures } from "@/data";
 
 export default function KeyFeatures() {
-	const [activeFeature, setActiveFeature] = useState(features[0]);
+	const [activeFeature, setActiveFeature] = useState(keyFeatures[0]);
 
 	return (
 		<section className="relative overflow-hidden bg-gray-50 dark:bg-gray-900 py-20 sm:py-32">
@@ -177,7 +43,7 @@ export default function KeyFeatures() {
 					<Card className="col-span-1 bg-gray-50 dark:bg-gray-800 shadow-lg">
 						<CardContent className="p-6">
 							<ul className="space-y-4">
-								{features.map((feature) => (
+								{keyFeatures.map((feature) => (
 									<motion.li
 										key={feature.category}
 										className={`flex items-center justify-between p-4 rounded-lg cursor-pointer transition-all duration-200 ${
