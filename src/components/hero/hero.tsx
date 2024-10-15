@@ -141,7 +141,7 @@ export default function Hero({ fadeInUp }: any) {
 						>
 							<div className="aspect-w-16 aspect-h-9 mb-4">
 								<iframe
-									src="https://www.youtube.com/embed/KgRwqmxw8AQ"
+									src="https://www.youtube.com/embed/YtnqEmg0nto"
 									frameBorder="0"
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 									allowFullScreen

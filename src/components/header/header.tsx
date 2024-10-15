@@ -40,12 +40,13 @@ export default function Header({ theme, toggleTheme }: any) {
 				</Link>
 				<div className="flex items-center space-x-4">
 					<motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-						<Button
-							variant="outline"
+						<Link
+							// variant="outline"
+							href="/docs"
 							className="bg-transparent text-teal-600 border-teal-600 hover:bg-teal-600 hover:text-white dark:text-indigo-400 dark:border-indigo-400 dark:hover:bg-indigo-400 dark:hover:text-gray-900 transition-colors"
 						>
 							Documentation
-						</Button>
+						</Link>
 					</motion.div>
 					<button
 						onClick={toggleTheme}
