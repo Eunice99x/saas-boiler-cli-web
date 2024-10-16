@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { ChevronRight } from "lucide-react";
 import { keyFeatures } from "@/data";
+import Image from "next/image";
 
 export default function KeyFeatures() {
 	const [activeFeature, setActiveFeature] = useState(keyFeatures[0]);
@@ -102,7 +103,7 @@ export default function KeyFeatures() {
 										>
 											<div className="flex items-center mb-4">
 												<div className="w-12 h-12 rounded-full bg-white dark:bg-gray-600 flex items-center justify-center mr-4 shadow-md">
-													<img src={item.icon} alt={item.name} className="w-8 h-8 object-contain" />
+													<Image src={item.icon} alt={item.name} className="w-8 h-8 object-contain" />
 												</div>
 												<h3 className="text-lg font-semibold text-gray-800 dark:text-white">{item.name}</h3>
 											</div>

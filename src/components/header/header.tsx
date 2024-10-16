@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Moon, Sun } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 export default function Header({ theme, toggleTheme }: any) {
 	return (
