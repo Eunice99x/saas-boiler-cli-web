@@ -127,7 +127,7 @@ export default function Docs() {
 							Step 1: Installation
 						</h2>
 						<p className="text-gray-600 dark:text-gray-300 mb-4">
-							To get started, you'll need to run our CLI tool. Open your terminal and run the following command:
+							To get started, you&apos;ll need to run our CLI tool. Open your terminal and run the following command:
 						</p>
 						<pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded-md mb-6 overflow-x-auto">
 							<code className="text-sm">npx saas-boiler-cli</code>
@@ -137,15 +137,15 @@ export default function Docs() {
 							Step 2: Select Options
 						</h2>
 						<p className="text-gray-600 dark:text-gray-300 mb-4">
-							After running the command, you'll be presented with a series of options to customize your project. Select
-							the options that best fit your needs.
+							After running the command, you&apos;ll be presented with a series of options to customize your project.
+							Select the options that best fit your needs.
 						</p>
 
 						<h2 id="install-dependencies" className="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-100">
 							Step 3: Install Dependencies
 						</h2>
 						<p className="text-gray-600 dark:text-gray-300 mb-4">
-							Once you've made your selections, install the project dependencies by running:
+							Once you&apos;ve made your selections, install the project dependencies by running:
 						</p>
 						<pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded-md mb-6 overflow-x-auto">
 							<code className="text-sm">npm install</code>
@@ -155,7 +155,7 @@ export default function Docs() {
 							Step 4: Run Your Project
 						</h2>
 						<p className="text-gray-600 dark:text-gray-300 mb-4">
-							Now you're ready to run your project! Use the following command:
+							Now you&apos;re ready to run your project! Use the following command:
 						</p>
 						<pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded-md mb-6 overflow-x-auto">
 							<code className="text-sm">npm run dev</code>
